@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cats</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="" class="logo">Cats</a>
+            <nav>
+                <a href="" class="btn" id="add">Add</a>
+            </nav>
+        </header>
+
+        <main>
+            
+        </main>
+
+        <footer>
+            2022
+        </footer>
+    </div>
+    <div class="popup-wrapper">
+        <!-- <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__content"></div>
+        </div> -->
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__content">
+                
+                <form id="addForm">
+                    <h2>add a cat</h2>
+                    <input type="text" name="name" placeholder = "cat's name" required>
+                    <input type="number" name="id" placeholder="id" min="1" required>
+                    <input type="text" name="ing_link" placeholder="image link">
+                    <input type="number" name="age" placeholder="age" min="0">
+                    <input type="number" name="rate" placeholder="rate" min="0" max="10">
+                    <label for="fav"><input type="checkbox" name="favourite">favourite</label>
+                    <textarea name="description" placeholder="description"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

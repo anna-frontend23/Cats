@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    min-height: 100vh;
+    background: lightblue;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 70px 1fr 50px;
+}
+
+header, footer {
+    background-color: aquamarine;
+    color: black;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+}
+
+footer {
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: flex-start;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #fff;
+}
+
+.card-pic {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0008;
+    backdrop-filter: blur(1px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popup-wrapper.active {
+    display: flex;
+}
+
+.popup {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.popup__close {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.popup__close:hover {
+    background-color: #222;
+    color: white;
+    border-color: #222;
+}
+.popup__close::after {
+    content: "\00D7";
+}
+
+#addForm {
+    display: grid;
+    gap: 20px;
+}
